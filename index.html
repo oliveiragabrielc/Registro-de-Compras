@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="app.js/logica.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <label class="data">Dia da compra:</label>
+        <input type="month" name="nome" id="inptData" >
+
+        <label class="nome">Nome do Produto:</label>
+        <input type="text" name="nome" id="inptName" placeholder="Exemplo: Academia">
+
+        <label class="preco">Valor Pago:</label>
+
+        <input type="text" name="preco" id="inptPrice" placeholder="R$:00,00">
+        <div class="btn">
+            <button onclick="compra()">Calcular</button>
+            <button onclick="clearField()">Limpar</button>
+        </div>
+    </div>
+    <div class="containerTable">
+        <table id="table">
+            <tr>
+                <th>Data:</th>
+                <th>Produto:</th>
+                <th>Preço:</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
