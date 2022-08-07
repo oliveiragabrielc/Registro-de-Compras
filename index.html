@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,18 +12,20 @@
 
 <body>
     <div class="container">
-        <label class="data">Dia da compra:</label>
-        <input type="month" name="nome" id="inptData" >
+        <label>Dia da compra:</label>
+        <input type="date" name="nome" id="inptData">
 
-        <label class="nome">Nome do Produto:</label>
-        <input type="text" name="nome" id="inptName" placeholder="Exemplo: Academia">
+        <label>Nome do Produto:</label>
+        <input type="text" name="nome" id="inptProduct" placeholder="Exemplo: Academia">
 
-        <label class="preco">Valor Pago:</label>
+        <label>Valor Pago:</label>
 
         <input type="text" name="preco" id="inptPrice" placeholder="R$:00,00">
         <div class="btn">
-            <button onclick="compra()">Calcular</button>
+            <button onclick="reciveFields()">Calcular</button>
             <button onclick="clearField()">Limpar</button>
+           
+
         </div>
     </div>
     <div class="containerTable">
@@ -34,6 +36,14 @@
                 <th>Preço:</th>
             </tr>
         </table>
+        <table id="table">
+            <tr>
+                <th>Mês:</th>
+                <th>Quantidade:</th>
+                <th>Total:</th>
+            </tr>
+        </table>
     </div>
 </body>
+
 </html>
